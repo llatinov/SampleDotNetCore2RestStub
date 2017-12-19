@@ -10,7 +10,8 @@ namespace SampleDotNetCore2RestStub
         public Startup()
         {
             var configurationBuilder = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddEnvironmentVariables();
 
             Configuration = configurationBuilder.Build();
         }
