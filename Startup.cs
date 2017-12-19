@@ -7,9 +7,12 @@ namespace SampleDotNetCore2RestStub
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup()
         {
-            Configuration = configuration;
+            var configurationBuilder = new ConfigurationBuilder()
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+
+            Configuration = configurationBuilder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -17,6 +20,7 @@ namespace SampleDotNetCore2RestStub
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.Configure<AppConfig>(Configuration);
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
