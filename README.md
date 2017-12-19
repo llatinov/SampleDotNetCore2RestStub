@@ -25,3 +25,7 @@ Database where you can add, get or remove persons with JSON showing RESTful web 
 ### Version ###
 
 http://localhost:5000/api/version returns a configuration value that is read from external config file.
+
+### Secure Persons ###
+
+http://localhost:5000/secure/person/all with Authorization header
