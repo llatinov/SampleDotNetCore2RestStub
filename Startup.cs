@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 using SampleDotNetCore2RestStub.Attributes;
+using SampleDotNetCore2RestStub.Middleware;
 
 namespace SampleDotNetCore2RestStub
 {
@@ -28,6 +29,7 @@ namespace SampleDotNetCore2RestStub
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseMiddleware<HttpExceptionMiddleware>();
             app.UseMvc();
         }
     }
