@@ -2,6 +2,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
+using SampleDotNetCore2RestStub.Attributes;
 
 namespace SampleDotNetCore2RestStub
 {
@@ -22,6 +23,7 @@ namespace SampleDotNetCore2RestStub
         {
             services.AddMvc();
             services.Configure<AppConfig>(Configuration);
+            services.AddScoped<AuthenticationFilterAttribute>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
