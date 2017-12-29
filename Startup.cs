@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 using SampleDotNetCore2RestStub.Attributes;
 using SampleDotNetCore2RestStub.Middleware;
+using SampleDotNetCore2RestStub.Repositories;
 
 namespace SampleDotNetCore2RestStub
 {
@@ -25,6 +26,7 @@ namespace SampleDotNetCore2RestStub
             services.AddMvc();
             services.Configure<AppConfig>(Configuration);
             services.AddScoped<AuthenticationFilterAttribute>();
+            services.AddSingleton<IPersonRepository, PersonRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

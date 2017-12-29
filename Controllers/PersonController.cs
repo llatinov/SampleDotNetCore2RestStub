@@ -8,29 +8,36 @@ namespace SampleDotNetCore2RestStub.Controllers
 {
     public class PersonController : Controller
     {
+        private readonly IPersonRepository _personRepository;
+
+        public PersonController(IPersonRepository personRepository)
+        {
+            _personRepository = personRepository;
+        }
+
         [HttpGet("person/get/{id}")]
         public Person GetPerson(int id)
         {
-            return PersonRepository.GetById(id);
+            return _personRepository.GetById(id);
         }
 
         [HttpGet("person/remove")]
         public string RemovePerson()
         {
-            PersonRepository.Remove();
-            return "Last person remove. Total count: " + PersonRepository.GetCount();
+            _personRepository.Remove();
+            return "Last person remove. Total count: " + _personRepository.GetCount();
         }
 
         [HttpGet("person/all")]
         public List<Person> GetPersons()
         {
-            return PersonRepository.GetAll();
+            return _personRepository.GetAll();
         }
 
         [HttpPost("person/save")]
         public string AddPerson(Person person)
         {
-            return PersonRepository.Save(person);
+            return _personRepository.Save(person);
         }
     }
 }
