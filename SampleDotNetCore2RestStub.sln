@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E2FD0252-B34
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDotNetCore2RestStub", "src\SampleDotNetCore2RestStub\SampleDotNetCore2RestStub.csproj", "{CDC16DE6-84F9-4613-9A65-DE98AD6E6267}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0E4DFCCB-0C7D-440D-A0E9-11F66A628BA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDotNetCore2RestStub.Integration.Test", "test\SampleDotNetCore2RestStub.Integration.Test\SampleDotNetCore2RestStub.Integration.Test.csproj", "{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,8 +36,21 @@ Global
 		{CDC16DE6-84F9-4613-9A65-DE98AD6E6267}.Release|x64.Build.0 = Release|x64
 		{CDC16DE6-84F9-4613-9A65-DE98AD6E6267}.Release|x86.ActiveCfg = Release|x86
 		{CDC16DE6-84F9-4613-9A65-DE98AD6E6267}.Release|x86.Build.0 = Release|x86
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Debug|x64.ActiveCfg = Debug|x64
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Debug|x64.Build.0 = Debug|x64
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Debug|x86.ActiveCfg = Debug|x86
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Debug|x86.Build.0 = Debug|x86
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Release|x64.ActiveCfg = Release|x64
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Release|x64.Build.0 = Release|x64
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Release|x86.ActiveCfg = Release|x86
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CDC16DE6-84F9-4613-9A65-DE98AD6E6267} = {E2FD0252-B344-43E4-8C9C-B1C6C64629F9}
+		{479C0443-B3F0-4D95-9E6F-0FD15BA1C924} = {0E4DFCCB-0C7D-440D-A0E9-11F66A628BA2}
 	EndGlobalSection
 EndGlobal
