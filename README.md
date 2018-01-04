@@ -1,6 +1,9 @@
 # SampleDotNetCore2RestStub #
 
-Code examples for following post: <a href="http://automationrhapsody.com/build-a-rest-api-with-net-core-2-and-run-it-on-docker-linux-container/">Build a REST API with .NET Core 2 and run it on Docker Linux container</a>
+Code examples for following posts:
+
+* <a href="http://automationrhapsody.com/build-a-rest-api-with-net-core-2-and-run-it-on-docker-linux-container/">Build a REST API with .NET Core 2 and run it on Docker Linux container</a>
+* <a href="https://automationrhapsody.com/net-core-integration-testing-mock-dependencies/">.NET Core integration testing and mock dependencies</a>
 
 ## Build ##
 * Install <a href="https://www.microsoft.com/net/download/windows" target="_blank">.NET Core SDK</a>
