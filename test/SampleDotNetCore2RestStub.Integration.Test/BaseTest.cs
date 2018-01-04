@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SampleDotNetCore2RestStub.Integration.Test.Client;
+using SampleDotNetCore2RestStub.Integration.Test.Mocks;
 
 namespace SampleDotNetCore2RestStub.Integration.Test
 {
@@ -13,7 +14,7 @@ namespace SampleDotNetCore2RestStub.Integration.Test
         public BaseTest()
         {
             var server = new TestServer(new WebHostBuilder()
-                .UseStartup<Startup>());
+                .UseStartup<StartupMock>());
             var httpClient = server.CreateClient();
             PersonServiceClient = new PersonServiceClient(httpClient);
         }

@@ -26,6 +26,12 @@ namespace SampleDotNetCore2RestStub
             services.AddMvc();
             services.Configure<AppConfig>(Configuration);
             services.AddScoped<AuthenticationFilterAttribute>();
+
+            ConfigureRepositories(services);
+        }
+
+        public virtual void ConfigureRepositories(IServiceCollection services)
+        {
             services.AddSingleton<IPersonRepository, PersonRepository>();
         }
 
