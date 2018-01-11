@@ -3,11 +3,11 @@ using SampleDotNetCore2RestStub.Repositories;
 
 namespace SampleDotNetCore2RestStub.Integration.Test.Mocks
 {
-    public class StartupMock : Startup
+    public class StartupStub : Startup
     {
         public override void ConfigureRepositories(IServiceCollection services)
         {
-            services.AddSingleton<IPersonRepository, PersonRepositoryMock>();
+            services.AddSingleton<IPersonRepository, PersonRepositoryStub>();
         }
     }
 }

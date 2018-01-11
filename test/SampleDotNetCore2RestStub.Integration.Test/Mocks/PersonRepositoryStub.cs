@@ -5,13 +5,13 @@ using SampleDotNetCore2RestStub.Repositories;
 
 namespace SampleDotNetCore2RestStub.Integration.Test.Mocks
 {
-    public class PersonRepositoryMock : IPersonRepository
+    public class PersonRepositoryStub : IPersonRepository
     {
         private Dictionary<int, Person> _persons = new Dictionary<int, Person>();
 
-        public PersonRepositoryMock()
+        public PersonRepositoryStub()
         {
-            _persons.Add(1, new Person { Id = 1, FirstName = "Mocked FN1", LastName = "Mocked LN1", Email = "mocked.email1@email.na" });
+            _persons.Add(1, new Person { Id = 1, FirstName = "Stubbed FN1", LastName = "Stubbed LN1", Email = "stubbed.email1@email.na" });
         }
 
         public Person GetById(int id)

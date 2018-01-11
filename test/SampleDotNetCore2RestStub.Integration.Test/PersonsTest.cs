@@ -18,7 +18,7 @@ namespace SampleDotNetCore2RestStub.Integration.Test
             var response = await PersonServiceClient.GetPerson("1");
 
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
-            Assert.AreEqual("Mocked LN1", response.Result.LastName);
+            Assert.AreEqual("Stubbed LN1", response.Result.LastName);
         }
 
         [TestMethod]
@@ -28,7 +28,7 @@ namespace SampleDotNetCore2RestStub.Integration.Test
 
             Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
             Assert.AreEqual(1, response.Result.Count);
-            Assert.AreEqual("Mocked LN1", response.Result[0].LastName);
+            Assert.AreEqual("Stubbed LN1", response.Result[0].LastName);
         }
     }
 }

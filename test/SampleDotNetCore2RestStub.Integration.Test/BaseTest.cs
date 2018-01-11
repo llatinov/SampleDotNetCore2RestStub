@@ -14,7 +14,7 @@ namespace SampleDotNetCore2RestStub.Integration.Test
         public BaseTest()
         {
             var server = new TestServer(new WebHostBuilder()
-                .UseStartup<StartupMock>());
+                .UseStartup<StartupStub>());
             var httpClient = server.CreateClient();
             PersonServiceClient = new PersonServiceClient(httpClient);
         }
