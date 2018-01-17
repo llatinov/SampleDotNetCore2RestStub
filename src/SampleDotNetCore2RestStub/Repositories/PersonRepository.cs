@@ -41,17 +41,16 @@ namespace SampleDotNetCore2RestStub.Repositories
 
         public string Save(Person person)
         {
-            var result = "";
             if (_persons.ContainsKey(person.Id))
             {
-                result = "Updated Person with id=" + person.Id;
+                _persons[person.Id] = person;
+                return "Updated Person with id=" + person.Id;
             }
             else
             {
-                result = "Added Person with id=" + person.Id;
+                _persons.Add(person.Id, person);
+                return "Added Person with id=" + person.Id;
             }
-            _persons.Add(person.Id, person);
-            return result;
         }
     }
 }

@@ -35,7 +35,7 @@ namespace SampleDotNetCore2RestStub.Controllers
         }
 
         [HttpPost("person/save")]
-        public string AddPerson(Person person)
+        public string AddPerson([FromBody]Person person)
         {
             return _personRepository.Save(person);
         }
