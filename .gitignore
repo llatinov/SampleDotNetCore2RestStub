@@ -3,3 +3,8 @@
 bin/
 obj/
 pub/
+
+# MiniCover
+coverage-html/
+coverage-hits.txt
+coverage.json
