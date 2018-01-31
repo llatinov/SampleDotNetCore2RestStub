@@ -37,7 +37,7 @@ dotnet minicover htmlreport --workdir ../ --threshold $threshold
 # This command returns failure if the coverage is lower than the threshold
 dotnet minicover report --workdir ../ --threshold $threshold
 
-
+# Create NCover report
 dotnet minicover xmlreport --workdir ../ --threshold $threshold
 
 cd ..

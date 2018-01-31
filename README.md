@@ -4,6 +4,8 @@ Code examples for following posts:
 
 * <a href="http://automationrhapsody.com/build-a-rest-api-with-net-core-2-and-run-it-on-docker-linux-container/">Build a REST API with .NET Core 2 and run it on Docker Linux container</a>
 * <a href="https://automationrhapsody.com/net-core-integration-testing-mock-dependencies/">.NET Core integration testing and mock dependencies</a>
+* <a href="https://automationrhapsody.com/code-coverage-net-core-unit-tests-opencover/">Code coverage of .NET Core unit tests with OpenCover</a>
+* <a href="https://automationrhapsody.com/net-core-code-coverage-linux-minicover/">.NET Core code coverage on Linux with MiniCover</a>
 
 ## Build ##
 * Install <a href="https://www.microsoft.com/net/download/windows" target="_blank">.NET Core SDK</a>
